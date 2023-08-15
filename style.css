@@ -115,12 +115,14 @@ nav ul li a{
 }
 
 .card .images{
-    background-size: cover;
-    background-position: center;
     width: 30em;
     height: 35em;
     border-radius: 0.6em;
     transition: transform 0.3s ease;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .card p{
@@ -128,16 +130,20 @@ nav ul li a{
     font-size: 1.4rem;
 }
 
-.card1 .images{
-    background-image: url(./images/dining_bck.png);
+.card .images img{
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
 }
 
-.card2 .images{
-    background-image: url(./images/living_room.png);
+.card .images img:hover{
+    transform: scale(110%);
 }
 
-.card3 .images{
-    background-image: url(./images/bedroom.png);
+.card2 .images img{
+    width: 500px;
+    height: auto;
+    transition: transform 0.3s;
 }
 
 .card p{
