@@ -1,0 +1,406 @@
+html{
+    font-size: 62.5%;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.0em 4.0em;
+}
+
+nav h1{
+    font-size: 2.4rem;
+    font-family: Montserrat;
+}
+
+nav ul{
+    display: flex;
+    font-size: 1.6rem;
+}
+
+.nav-texts{
+    gap: 4.0rem;
+    font-family: Poppins;
+}
+
+.nav-icons{
+    gap: 2.0rem;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+.content{
+    position: relative;
+    height: 60.0em;
+    background-image: url(./images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.buy-now{
+    position: absolute;
+    right: 4.0em;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: max-content;
+    font-family: Poppins;
+    background: #FFF3E3;
+    padding: 30px 30px 20px 20px;
+}
+
+.buy-now h1{
+    font-size: 3.4rem;
+    color: #B88E2F;
+}
+
+.buy-now p{
+    font-size: 1.2rem;
+}
+
+.new-arrival{
+    letter-spacing: 2px;
+}
+
+.buy-btn{
+    background: #B88E2F;
+    padding: 10px 25px;
+    width: max-content;
+    margin-top: 2.0em;
+}
+
+.buy-now a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Range */
+.range{
+    padding-top: 4.0em;
+    font-family: Poppins;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.range-heading{
+    font-size: 2.4rem;
+}
+
+.range-subheading{
+    font-size: 1.2rem;
+}
+
+.cards{
+    margin-top: 4.0em;
+    display: flex;
+    gap: 4.0em;
+}
+
+.card{
+    width: max-content;
+}
+
+.card .images{
+    background-size: cover;
+    background-position: center;
+    width: 30em;
+    height: 35em;
+    border-radius: 0.6em;
+    transition: transform 0.3s ease;
+}
+
+.card p{
+    margin-top: 0.8rem;
+    font-size: 1.4rem;
+}
+
+.card1 .images{
+    background-image: url(./images/dining_bck.png);
+}
+
+.card2 .images{
+    background-image: url(./images/living_room.png);
+}
+
+.card3 .images{
+    background-image: url(./images/bedroom.png);
+}
+
+.card p{
+    text-align: center;
+}
+
+/* Product */
+.products{
+    padding-top: 4.0rem;
+    font-family: Poppins;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.products h1{
+    font-size: 2.4rem;
+}
+
+.column{
+    display: flex;
+    gap: 2.8rem;
+    margin: 4.0rem 0;
+}
+.pcard{
+    width: 24.0em;
+    height: 35.0em;
+    background: #e6e6e6;
+}
+
+.pimage{
+    width: 100%;
+    height: 70%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.pcard h1{
+    font-size: 2.4rem;
+}
+
+.des{
+    font-size: 1.2rem;
+    margin-bottom: 1.0rem;
+}
+
+.price{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.price span{
+    font-weight: normal;
+}
+
+.pcard-details{
+    padding: 0.5rem 0 0 1.0rem;
+}
+
+/* product images */
+.pcard1 .pimage{
+    background-image: url(./images/product1.png);
+}
+
+.pcard2 .pimage{
+    background-image: url(./images/product2.png);
+}
+
+.pcard3 .pimage{
+    background-image: url(./images/product3.png);
+}
+
+.pcard4 .pimage{
+    background-image: url(./images/product4.png);
+}
+
+.pcard5 .pimage{
+    background-image: url(./images/product5.png);
+}
+
+.pcard6 .pimage{
+    background-image: url(./images/product6.png);
+}
+
+.pcard7 .pimage{
+    background-image: url(./images/product7.png);
+}
+
+.pcard8 .pimage{
+    background-image: url(./images/product8.png);
+}
+/* end of image */
+
+.show-more{
+    border: 0.2rem solid #B88E2F;
+    padding: 1.0rem 4.0rem;
+    color: #B88E2F;
+    text-decoration: none;
+    font-size: 1.4rem;
+    margin-bottom: 4.0rem;
+}
+
+/* Explore */
+.explore{
+    padding: 4.0rem 0 4.0rem 15rem;
+    background: #FCF8F3;
+    font-family: Poppins;
+    display: flex;
+    gap: 2.4rem;
+    align-items: center;
+}
+
+.explore-texts h1{
+    font-size: 3.2rem;
+
+}
+
+.explore-texts p{
+    font-size: 1.4rem;
+}
+
+.explore-texts a{
+    text-decoration: none;
+}
+
+.explore-btn{
+    background: #B88E2F;
+    color: #fff;
+    padding: 1.0rem 2.5rem;
+    width: max-content;
+    margin-top: 2.4rem;
+}
+
+.explore-cards{
+    display: flex;
+    align-items: start;
+    gap: 2.4rem;
+}
+
+.explore-img{
+    position: relative;
+    width: 30rem;
+    height: 45rem;
+    background-image: url(./images/explore/explorebg.png);
+    background-position: center;
+}
+
+.ex-des-btn{
+    position: absolute;
+    left: 2.0rem;
+    bottom: 2.0rem;
+    display: flex;
+    align-items: end;
+}
+
+.ex-des{
+    background: rgba(255, 255, 255, 0.6);
+    border: 0.1rem solid rgba(255, 255, 255, 0.3);
+    padding: 2.0rem;
+    width: max-content;
+    backdrop-filter: blur(10px);
+}
+
+.ex-des h1{
+    font-size: 2.0rem;
+}
+
+.ex-des p{
+    font-size: 1.4rem;
+}
+
+.ex-btn{
+    background: #B88E2F;
+    padding: 1.0rem 1.5rem;
+    width: max-content;
+}
+
+.ex-btn i{
+    font-size: 1.6rem;
+}
+
+.more-cards{
+    position: relative;
+    display: flex;
+    gap: 2.4rem;
+}
+
+.mcard{
+    width: 30rem;
+    height: 30rem;
+    background-position: center;
+    background-size: cover;
+}
+
+.mcard1{
+    background-image: url(./images/explore/explore1.png);
+}
+
+.mcard2{
+    background-image: url(./images/explore/explore3.png);
+}
+
+.next-btn{
+    top: 50%;
+    transform: translate(0, -50%);
+    position: absolute;
+    right: 1.0rem;
+    font-size: 2.4rem;
+    background: rgba(255, 255, 255, 0.4);
+    border: 0.1rem solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(2px);
+    border-radius: 5.0rem;
+    height: max-content;
+    width: max-content;
+    padding: 0.5rem 1.2rem;
+}
+
+/* footer */
+
+footer{
+    font-family: Poppins;
+    display: flex;
+    justify-content: space-between;
+    padding: 4.0rem 10.0rem;
+    align-items: start;
+    border-top: 0.1rem solid #000;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer ul li{
+    font-size: 1.4rem;
+    margin-bottom: 3.2rem;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.footer-headers{
+    color: #808080;
+}
+
+#email{
+
+    border: none;
+    border-bottom: 0.1rem solid black;
+    padding: 0.3rem;
+    outline: none;
+}
+
+#email::placeholder{
+    font-family: Poppins;
+}
+
+.sub{
+    text-decoration: 0.2rem underline;
+    color: black;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
