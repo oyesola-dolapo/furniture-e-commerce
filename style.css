@@ -8,10 +8,16 @@ html{
 }
 
 nav{
+    width: 100%;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.0em 4.0em;
+    z-index: 999;
 }
 
 nav h1{
@@ -64,7 +70,7 @@ nav ul li a{
 
 .content{
     position: relative;
-    height: 60.0em;
+    height: 100vh;
     background-image: url(./images/background.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -114,6 +120,7 @@ nav ul li a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 .range-heading{
@@ -128,6 +135,8 @@ nav ul li a{
     margin-top: 4.0em;
     display: flex;
     gap: 4.0em;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card{
@@ -183,15 +192,17 @@ nav ul li a{
     font-size: 2.4rem;
 }
 
-.column{
+.products-cards{
     display: flex;
-    gap: 2.8rem;
-    margin: 4.0rem 0;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
 .pcard{
     width: 24.0em;
     height: 35.0em;
     background: #e6e6e6;
+    margin: 2.0rem;
 }
 
 .pimage{
@@ -275,6 +286,7 @@ nav ul li a{
     display: flex;
     gap: 2.4rem;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .explore-texts h1{
@@ -301,6 +313,7 @@ nav ul li a{
 .explore-cards{
     display: flex;
     align-items: start;
+    flex-wrap: wrap;
     gap: 2.4rem;
 }
 
@@ -349,6 +362,7 @@ nav ul li a{
 .more-cards{
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     gap: 2.4rem;
 }
 
@@ -391,10 +405,12 @@ footer{
     padding: 4.0rem 10.0rem;
     align-items: start;
     border-top: 0.1rem solid #000;
+    flex-wrap: wrap;
 }
 
 footer ul{
     list-style: none;
+    padding-right: 2.0rem;
 }
 
 footer ul li{
@@ -429,4 +445,42 @@ footer ul li a{
     color: black;
     font-size: 1.4rem;
     font-weight: bold;
+}
+
+@media (max-width: 1100px){
+    .nav-icons, .nav-texts{
+        display: none;
+    }
+
+    .explore{
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    .explore-cards, .more-cards{
+        justify-content: center;
+    }
+
+    .more-cards{
+        align-items: center;
+    }
+    .next-btn{
+        position: static;
+        margin: 2.0rem;
+    }
+}
+
+@media (max-width: 530px){
+    .content{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .buy-now{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 5.0rem;
+    }
 }
