@@ -410,7 +410,7 @@ footer{
 
 footer ul{
     list-style: none;
-    padding-right: 2.0rem;
+    padding-right: 8.0rem;
 }
 
 footer ul li{
@@ -468,6 +468,10 @@ footer ul li a{
         position: static;
         margin: 2.0rem;
     }
+
+    .news li{
+        margin-bottom: 1.0rem;
+    }
 }
 
 @media (max-width: 530px){
@@ -483,4 +487,6 @@ footer ul li a{
         transform: translate(-50%, -50%);
         margin-top: 5.0rem;
     }
+
+
 }
