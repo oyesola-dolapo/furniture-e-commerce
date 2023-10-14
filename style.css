@@ -8,6 +8,7 @@ html{
 }
 
 nav{
+    position: relative;
     width: 100%;
     background: #fff;
     position: fixed;
@@ -276,6 +277,7 @@ nav ul li a{
     text-decoration: none;
     font-size: 1.4rem;
     margin-bottom: 4.0rem;
+    transition: background 300ms linear;
 }
 
 /* Explore */
@@ -452,6 +454,10 @@ footer ul li a{
         display: none;
     }
 
+    .menu{
+        display: block;
+    }
+
     .explore{
         padding-left: 0;
         justify-content: center;
@@ -482,11 +488,38 @@ footer ul li a{
         align-items: center;
     }
     .buy-now{
-        top: 50%;
+        top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
         margin-top: 5.0rem;
     }
 
+}
 
+@media (max-width: 428px){
+    .buy-now{
+        width: 40rem;
+    }
+
+    .buy-now h1{
+        font-size: 2.4rem;
+        line-height: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .buy-now p{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 390px){
+    html{
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 320px){
+    html{
+        font-size: 7px;
+    }
 }

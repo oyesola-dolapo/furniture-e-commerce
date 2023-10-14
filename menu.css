@@ -1,0 +1,48 @@
+.menu{
+    display: none;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+
+.menu-icon{
+    width: 2.5rem;
+    height: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-icon .line{
+    height: 0.4rem;
+    width: 100%;
+    background: black;
+}
+
+.menu-drop{
+    width: 20rem;
+    height: 0;
+    font-family: Poppins;
+    position: absolute;
+    top: 4.5rem;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    overflow: hidden;
+    transition: height 300ms linear;
+}
+
+.menu-drop li a{
+    font-size: 1.8rem;
+}
+
+@media (max-width: 1100px){
+    .menu{
+        display: block;
+    }
+}
