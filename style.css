@@ -7,6 +7,10 @@ html{
     box-sizing: border-box;
 }
 
+html, body, .container{
+    scroll-behavior: smooth;
+}
+
 nav{
     position: relative;
     width: 100%;
